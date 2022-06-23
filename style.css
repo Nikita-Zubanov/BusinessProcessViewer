@@ -1,0 +1,85 @@
+#flow-element {
+    z-index: 0;
+    position: absolute;
+}
+
+.base-element {
+    z-index: 2;
+    position: absolute;
+}
+
+.input-metadata-element textarea {
+    z-index: 2;
+    position: fixed;
+}
+
+.start-button-element button {
+    z-index: 2;
+    position: absolute;
+}
+
+.details-element .parameters ul {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    
+    overflow-x: scroll;
+    overflow-y: scroll;
+    resize: none;
+
+    max-width: 100vh;
+    min-width: 20vh;
+    width: 40vh;
+    height: 85vh;
+}
+
+.body {
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    overflow-x: scroll;
+    overflow-y: scroll;
+    resize: none;
+
+    max-width: 100vh;
+    min-width: 20vh;
+    width: 40vh;
+    height: 85vh;
+}
+
+.undefined-element {
+    border-width: 0.25em;
+    border-style: inset;
+    border-radius: 50% 50% 20% 20%;
+}
+.undefined-element:before, .undefined-element:after {
+    content: "";
+    position: absolute;
+    background: inherit;
+    border-style: solid;
+}
+.undefined-element:before {
+    left: 65%; 
+    bottom: -0.35em;
+    width: 60%; 
+    height: 90%;
+    border-left: none;
+    border-radius: 50% 50% 50% 0;
+}
+.undefined-element:after {
+    right: 80%;
+    bottom: -0.35em;
+    width: 40%; 
+    height: 50%;
+    border-right: none;
+    border-radius: 50% 50% 0;
+}
+
+.day-of-weeks-list {
+    margin: 0;
+    padding: 4px;
+}
+.day-of-weeks-list li {
+    display: inline;
+    margin-right: 5px;
+}
